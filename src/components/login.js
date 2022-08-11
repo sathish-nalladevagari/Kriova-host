@@ -1,4 +1,6 @@
 import React from 'react';
+import FormGroupExample from './form';
+import CollapsibleExample from './nav';
 
 const Login = () => {
     function login(e){
@@ -6,7 +8,10 @@ const Login = () => {
         console.log("uhsduf")
     }
     return ( 
+        <>
+            <CollapsibleExample />
         <div className='login'>
+            
             <form onSubmit={login}>
                 <label>Email</label><br/>
                 <input type="email" name="username"  /><br/>
@@ -15,6 +20,7 @@ const Login = () => {
                 <button type="submit">Login</button>
             </form>
         </div>
+        </>
      );
 }
  

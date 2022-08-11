@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import CollapsibleExample from './nav';
+
 
 function Register (){
     
@@ -12,10 +14,13 @@ function Register (){
     function submitform(e){
         e.preventDefault()
         console.log(fname,lname,Username,email,password)
+      
 
     }
     return(
     <div className='register'>
+        <CollapsibleExample />
+        
         <form onSubmit={submitform}>
             
             <h1>Register Here</h1><br/>
